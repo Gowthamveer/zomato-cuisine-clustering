@@ -1,32 +1,51 @@
-# Zomato Cuisine Clustering for Recommendations 🍽️
+# 🍽️ Zomato Cuisine Clustering
 
-This project applies unsupervised learning using **K‑Means Clustering** to categorize restaurants and cuisines based on user reviews and ratings. It aims to enhance Zomato's recommendation engine by discovering customer preference patterns and grouping similar cuisines together.
+This project uses **K-Means Clustering** for unsupervised learning to group cuisines based on user reviews and ratings from Zomato restaurant data.
 
-## 📌 Objective
-Uncover meaningful patterns in restaurant data and suggest personalized dining recommendations by grouping similar cuisines.
+---
 
-## 🧠 Techniques Used
-- **TF‑IDF Vectorization** for transforming cuisine strings into numerical features  
-- **K‑Means Clustering** to group restaurants/cuisines  
-- **Elbow & Silhouette Methods** to determine optimal number of clusters  
+## 📊 Project Objective
 
-## 📊 Dataset
-File: `zomato.csv` (ISO‑8859‑1 encoded) – contains restaurant names, cuisines, ratings, votes, etc.
+To enhance Zomato’s recommendation engine by identifying cuisine clusters from user reviews and restaurant metadata.
 
-## 🛠️ Technologies
-| Component          | Description                     |
-|--------------------|---------------------------------|
-| Language           | Python                          |
-| Libraries          | Pandas, Scikit‑learn, Matplotlib|
-| Feature Extraction | TF‑IDF Vectorizer               |
-| Clustering         | K‑Means (Unsupervised Learning) |
+---
 
-## 🧪 How to Run
-```bash
-# clone your repo & cd into it
+## 🧠 Technologies Used
+- Python 🐍
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+
+---
+
+## 📁 Dataset
+The dataset is taken from Kaggle/Zomato (mention exact source or link if applicable). Includes:
+- Restaurant names
+- Cuisines
+- Ratings
+- User reviews
+
+---
+
+## 🚀 How to Run
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Gowthamveer/zomato-cuisine-clustering.git
+Install dependencies:
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-jupyter notebook zomato_clustering.ipynb
-```
+Run the notebook:
 
-## ✅ Status
-**Completed** – ready for submission.
+bash
+Copy
+Edit
+jupyter notebook zomato_clustering.ipynb
+📌 Output
+📈 Visualized clusters of similar cuisines
+
+🔍 Insight into user preferences
+
+💡 Improved recommendation suggestions
